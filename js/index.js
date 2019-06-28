@@ -1,6 +1,6 @@
 // CONTACT
 function openContact() {
-  document.getElementById("contact").style.width = "95%";
+  document.getElementById("contact").style.width = "96%";
 }
 
 function closeContact() {
