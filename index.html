@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/index.css">
+  <title>So Chic So Graphic</title>
+</head>
+
+
+<body>
+
+  <!--header-->
+  <header class="header">
+    <div class="filter-background">
+      <div class="logo">
+        <h1> <img src="img/logo.png" alt="So Chic So Graphic"> </h1>
+
+      </div>
+    </div>
+
+    <aside class="social">
+      <ul>
+        <li> <a href="https://www.facebook.com/sochic.sographic" target="_blank">
+            <img src="img/facebook.jpg" alt="facebook"></a> </li>
+        <li> <a href="https://www.instagram.com/so.chic.so.graphic" target="_blank">
+            <img src="img/instagram.jpg" alt="instagram"> </a> </li>
+      </ul>
+    </aside>
+
+    <h2>Édition de souvenirs tendances et élégants</h2>
+    <h3>entièrement fabriqué en France</h3>
+
+    <div id="contact" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeContact()">&times;</a>
+      <div class="overlay-content">
+        <div>
+          <p><a href="tel:+33662354367"> ☎ +33 (0) 6 62 35 43 67</a>
+            <a href="https://www.google.com/maps/place/So+Chic+So+Graphic/@48.8279809,2.327876,17z/data=!3m1!4b1!4m5!3m4!1s0x47e671b06e42d323:0xf3b988d11b8e25eb!8m2!3d48.8279774!4d2.3300647" target="_blank">➤ 32 rue d'Alésia - 75014
+              Paris</a>
+          </p>
+          <form class="contactform" action="https://formspree.io/arthurbreuil@gmail.com" method="POST">
+            <input type="text" name="name" placeholder="Votre Nom et Prénom">
+            <input type="text" name="name_boutique" placeholder="Nom de la boutique / musée">
+            <input type="email" name="_replyto" placeholder="Votre email">
+            <input type="tel" name="_tel" placeholder="Votre téléphone">
+            <select name="_presta">
+              <option value="souhait">Prestation souhaitée ↓</option>
+              <option value="devis">Devis</option>
+              <option value="creation">Création sur-mesure</option>
+              <option value="revendeur">Devenir revendeurs So Chic So Graphic</option>
+              <option value="commande">A propos d'une commande</option>
+              <option value="partenariat">Partenariat</option>
+            </select>
+            <input type="hidden" name="_subject" value="envoyé depuis Sochic" />
+            <textarea name="message" placeholder="Votre message"></textarea>
+            <input type="text" name="_gotcha" style="display:none" />
+            <input type="submit" value="Envoyer">
+            <input type="hidden" name="_next" value="//sochic-sographic.com" />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <h2> <span style="font-size:20px;cursor:pointer" onclick="openContact()"> Nous contacter</span></h2>
+
+    <div id="myBtnContainer">
+      <a href="#myBtnContainer"><button class="btn active" onclick="filterSelection('collections-exclu')"> Collection exclusive</button></a>
+      <a href="#myBtnContainer"><button class="btn" onclick="filterSelection('sur-mesure')"> Collection sur-mesure</button></a>
+      <a href="#myBtnContainer"><button class="btn" onclick="filterSelection('produits')"> Produits So Chic</button></a>
+
+    </div>
+  </header>
+
+  <!--main-->
+  <div class="wrapper">
+    <!--=============================PRODUITS SO CHIC===================================-->
+    <div class="column produits">
+      <div class="panel">
+        <div class="name">
+          Badges</div>
+        <img src="img/badge.jpg" alt="Badge">
+      </div>
+    </div>
+    <div class="column produits">
+      <div class="panel">
+        <div class="name">
+          Bloc notes</div>
+        <img src="img/bloc-notes.jpg" alt="Bloc notes">
+      </div>
+    </div>
+    <div class="column produits">
+      <div class="panel">
+        <div class="name">
+          Cartes postales</div>
+        <a href="#myBtnContainer"> <img src="img/carte-postale.jpg" alt="Cartes postales" onclick="filterSelection('produit/carte')"> </a>
+      </div>
+    </div>
+    <div class="column produit/carte">
+      <div class="panel">
+        <div class="name">
+          Carte postale Bords de Loire</div>
+        <a href="#myBtnContainer"> <img src="img/carte-postale.jpg" alt="Carte postale Bords de Loire"> </a>
+      </div>
+    </div>
+    <div class="column produit/carte">
+      <div class="panel">
+        <div class="name">
+          Cartes postales Cerf</div>
+        <a href="#myBtnContainer"> <img src="img/produits-cartes/cartepostale-cerf.jpg" alt="Cartes postales Cerf"> </a>
+      </div>
+    </div>
+    <div class="column produit/carte">
+      <div class="panel">
+        <div class="name">
+          Carte postale Amboise</div>
+        <a href="#myBtnContainer"> <img src="img/produits-cartes/cartepostale-amboise-bleu.jpg" alt="Carte postale Amboise"> </a>
+      </div>
+    </div>
+    <div class="column produits">
+      <div class="panel">
+        <div class="name">
+          Décapsuleurs</div>
+        <img src="img/decapsuleur.jpg" alt="Décapsuleurs">
+      </div>
+    </div>
+    <div class="column produits">
+      <div class="panel">
+        <div class="name">
+          Magnets</div>
+        <img src="img/magnet.jpg" alt="Magnets">
+      </div>
+    </div>
+    <div class="column produits">
+      <div class="panel">
+        <div class="name">
+          Marques-pages</div>
+        <img src="img/marque-page.jpg" alt="Marque-pages">
+      </div>
+    </div>
+    <div class="column produits">
+      <div class="panel">
+        <div class="name">
+          Miroirs</div>
+        <img src="img/miroir.jpg" alt="Miroirs">
+      </div>
+    </div>
+    <div class="column produits">
+      <div class="panel">
+        <div class="name">
+          Posters</div>
+        <img src="img/poster.jpg" alt="Posters">
+      </div>
+    </div>
+    <div class="column produits">
+      <div class="panel">
+        <div class="name">
+          Portes-clés</div>
+        <img src="img/porte-clef.jpg" alt="Portes-clés">
+      </div>
+    </div>
+    <!--=============================COLLECTION EXCLUSIVE===================================-->
+    <div class="column collections-exclu">
+      <div class="panel">
+        <div class="name">
+          Chateau des ducs de bretagne</div>
+        <img src="img/partenaires/chateau-des-ducs-de-bretagne.jpg" alt="Chateau-des-ducs-de-bretagne">
+      </div>
+    </div>
+    <div class="column collections-exclu">
+      <div class="panel">
+        <div class="name">
+          Clos Luce</div>
+        <img src="img/partenaires/clos-luce.jpg" alt="Clos Luce">
+      </div>
+    </div>
+    <div class="column collections-exclu">
+      <div class="panel">
+        <div class="name">
+          Grand Pressigny</div>
+        <img src="img/partenaires/grand-pressigny.jpg" alt="Grand Pressigny">
+      </div>
+    </div>
+    <div class="column collections-exclu">
+      <div class="panel">
+        <div class="name">
+          Les machines de l'île</div>
+        <img src="img/partenaires/les-machines-de-l-ile.jpg" alt="Les machines de l'île">
+      </div>
+    </div>
+    <div class="column collections-exclu">
+      <div class="panel">
+        <div class="name">
+          Musée des marais-salants</div>
+        <img src="img/partenaires/musee-des-marais-salants.jpg" alt="Musée des marais-salants">
+      </div>
+    </div>
+    <div class="column collections-exclu">
+      <div class="panel">
+        <div class="name">
+          Vaux-le-Vicomte</div>
+        <img src="img/partenaires/vaux-le-vicomte.jpg" alt="Vaux-le-Vicomte">
+      </div>
+    </div>
+    <!--=============================COLLECTION SUR-MESURE===================================-->
+    <div class="column sur-mesure">
+      <div class="panel">
+        <div class="name">
+          Chateau de Vayres</div>
+        <a href="#myBtnContainer"> <img src="img/collection-sur-mesure/01-chateau-de-vayres/chateau-de-vayres-gironde.jpg" alt="Chateau de Vayres" onclick="filterSelection('sur-mes/chateau-de-vayres')"> </a>
+      </div>
+    </div>
+    <div class="column sur-mes/chateau-de-vayres">
+      <div class="panel">
+        <div class="name">
+          Château de Vayres</div>
+        <a href="#myBtnContainer"> <img src="img/collection-sur-mesure/01-chateau-de-vayres/chateau-de-vayres-gironde.jpg" alt="Affiche chateau de Vayres"> </a>
+      </div>
+    </div>
+    <div class="column sur-mes/chateau-de-vayres">
+      <div class="panel">
+        <div class="name">
+          Affiche chateau de Vayres</div>
+        <a href="#myBtnContainer"> <img src="img/collection-sur-mesure/01-chateau-de-vayres/chateau-de-vayres-gironde/affiche-chateau-de-vayres-gironde.jpg" alt="Affiche chateau de Vayres"> </a>
+      </div>
+    </div>
+    <!--=============================TELECHARGER CATALOGUE===================================-->
+    <div class="column produits collections-exclu sur-mesure">
+      <div class="panel">
+        <div class="name">
+          Télécharger le catalogue en PDF</div>
+        <a href="https://sochic-sographic.com/catalogue-so-chic-so-graphic/2019_sochicsographic-catalogue.pdf" target="_blank"> <img src="img/catalogue-livre.png" alt="Télécharger le catalogue"> </a>
+      </div>
+    </div>
+
+
+
+
+
+    <!--footer du site-->
+    <footer class="footer">
+      <p>présentation finale ENC SNCF, Arthur Breuil</p>
+      <p>©2019 So Chic So Graphic - Tous droits réservés - Reproduction interdite - Modèles déposés</p>
+    </footer>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>
