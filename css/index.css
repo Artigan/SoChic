@@ -163,6 +163,15 @@ h3 {
   position: inherit;
 }
 
+h4 {
+  font-family: 'Arial', sans-serif;
+  padding: 0 10px 0 0;
+  font-size: calc(12px + 0.5vw);
+  color: black;
+
+
+}
+
 h2 {
   font-family: 'Arial', sans-serif;
   font-size: calc(18px + 0.5vw);
@@ -225,7 +234,7 @@ position: absolute;
   /* Opera */
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 1050px) {
   .name {
     display: block;
     background-color: #0d2951;
