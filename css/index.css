@@ -1,10 +1,10 @@
 /*================BODY===============*/
-html {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
   overflow-x: hidden;
-  
 }
-
 
 body {
   font-family: 'Arial', sans-serif;
@@ -18,7 +18,7 @@ p {
 }
 
 a {
-  color: black;
+  color: blacksocial;
 }
 
 h2 {
@@ -31,7 +31,7 @@ h2 {
   position: inherit;
 }
 
-header h2 span {
+h2 span {
   font-family: 'Arial', sans-serif;
   font-size: calc(18px + 0.5vw);
   color: white;
@@ -86,18 +86,18 @@ h4 {
 /* Style the buttons */
 #myBtnContainer {
   position: absolute;
-  bottom: 8px;
+  bottom: 5px;
 }
 
 .btn {
   border: none;
   outline: none;
-  padding: 15px 20px 15px 20px;
+  padding: 12px 17px 12px 17px;
   margin-top: 5px;
   background-color: #bc9f55;
   cursor: pointer;
   color: white;
-  font-size: 25px;
+  font-size: 22px;
 }
 
 /* Add a background color on mouse-over */
@@ -135,7 +135,7 @@ header {
   width: 100%;
   height: 100vh;
   background: #0d2951;
-  opacity: 0.7;
+  opacity: 0.6;
   position: absolute;
   z-index: 0;
   background-position: center;
@@ -145,12 +145,17 @@ header {
 
 .logo img {
   width: 50%;
-  padding: 30px 30px 30px 30px;
+  height: auto;
+  margin: auto;
+ position: absolute;
+ top: 0; left: 0; bottom: 0; right: 0;
 }
 
 .social img {
-  width: 30px;
-  position: relative;
+  width: 40px;
+  position:absolute;
+  left: 0;
+  top: 5px;
 }
 
 .social>ul>li {
@@ -191,10 +196,6 @@ header {
 }
 
 .panel img {
-  max-width: 100%;
-}
-
-.panel img:hover {
   max-width: 100%;
 }
 
@@ -280,16 +281,13 @@ header {
 
 /*==============FOOTER=============*/
 .footer {
-  grid-column: 1 / 4;
 
+  flex: 2 1 100%;
+  grid-column: 1 / 2;
 }
 
-.footer h2 {
-background-color: rgba(13, 41, 82, 0.91);
-}
-
-.footer img {
-  max-width: 30%;
+.footer h2 span {
+  position: relative;
 }
 
 /*==============SCROLLBAR=============*/
