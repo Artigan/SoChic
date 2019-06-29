@@ -1,10 +1,10 @@
-/*body*/
-*,
-*:before,
-*:after {
+/*================BODY===============*/
+html {
   box-sizing: border-box;
   overflow-x: hidden;
+  
 }
+
 
 body {
   font-family: 'Arial', sans-serif;
@@ -21,69 +21,51 @@ a {
   color: black;
 }
 
-.wrapper {
-  margin: 0 30px;
-  /* display: grid;*/
-}
-
-/* no grid support? */
-.wrapper {
+h2 {
+  font-family: 'Arial', sans-serif;
+  font-size: calc(18px + 0.5vw);
+  color: white;
+  padding: 8px 10px 5px 10px;
   display: flex;
-  flex-wrap: wrap;
+  justify-content: flex-end;
+  position: inherit;
 }
 
-.wrapper {
-  display: grid;
-  margin: 0 auto;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  grid-auto-rows: minmax(150px, auto);
+header h2 span {
+  font-family: 'Arial', sans-serif;
+  font-size: calc(18px + 0.5vw);
+  color: white;
+  padding: 8px 10px 5px 10px;
+  display: flex;
+  right: 8px;
+  bottom: 5px;
+  position: fixed;
+  background-color: rgba(13, 41, 82, 0.91);
+  z-index: 10;
 }
 
-.panel {
-  /* needed for the flex layout*/
-  flex: 1 1 200px;
+h3 {
+  font-family: 'Arial', sans-serif;
+  padding: 10px;
+  font-size: calc(12px + 0.5vw);
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  position: inherit;
 }
 
-.tall-panel {
-  grid-column-end: span 2;
-}
-
-header {
-  background-image: url("../img/fonds/fortboyard.jpg");
-  background-attachment: fixed;
-  background-color: #ffffff;
-  background-size: cover;
-  position: relative;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100vh;
-}
-
-.filter-background {
-  width: 100%;
-  height: 100vh;
-  background: #0d2951;
-  opacity: 0.7;
-  position: absolute;
-  z-index: 0;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.footer {
-  margin-left: 5px;
-  margin-right: 5px;
-  flex: 0 1 100%;
-  grid-column: 1 / -2;
+h4 {
+  font-family: 'Arial', sans-serif;
+  padding: 0 10px 0 0;
+  font-size: calc(12px + 0.5vw);
+  color: #0d2951;
 }
 
 .wrapper>* {
   color: #fff;
 }
 
-/* FILTER */
+/* =================FILTER============== */
 .column {
   display: none;
   /* Hide columns by default */
@@ -136,7 +118,31 @@ header {
   color: white;
 }
 
-/*HEADER*/
+/*=================HEADER===============*/
+header {
+  background-image: url("../img/fonds/fortboyard.jpg");
+  background-attachment: fixed;
+  background-color: #ffffff;
+  background-size: cover;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+}
+
+.filter-background {
+  width: 100%;
+  height: 100vh;
+  background: #0d2951;
+  opacity: 0.7;
+  position: absolute;
+  z-index: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .logo img {
   width: 50%;
   padding: 30px 30px 30px 30px;
@@ -152,50 +158,34 @@ header {
   display: inline;
 }
 
-/*main*/
-h3 {
-  font-family: 'Arial', sans-serif;
-  padding: 10px;
-  font-size: calc(12px + 0.5vw);
-  color: white;
+/*===========SECTION WITH FILTER=======*/
+.wrapper {
+  margin: 0 30px;
+  /* display: grid;*/
+}
+
+/* no grid support? */
+.wrapper {
   display: flex;
-  justify-content: flex-end;
-  position: inherit;
+  flex-wrap: wrap;
 }
 
-h4 {
-  font-family: 'Arial', sans-serif;
-  padding: 0 10px 0 0;
-  font-size: calc(12px + 0.5vw);
-  color: black;
-
-
+.wrapper {
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-auto-rows: minmax(150px, auto);
 }
 
-h2 {
-  font-family: 'Arial', sans-serif;
-  font-size: calc(18px + 0.5vw);
-  color: white;
-  padding: 8px 10px 5px 10px;
-  display: flex;
-  justify-content: flex-end;
-  position: inherit;
+.panel {
+  /* needed for the flex layout*/
+  flex: 1 1 200px;
 }
 
-h2 span {
-  font-family: 'Arial', sans-serif;
-  font-size: calc(18px + 0.5vw);
-  color: white;
-  padding: 8px 10px 5px 10px;
-  display: flex;
-  right: 8px;
-  bottom: 5px;
-  position: fixed;
-  background-color: rgba(13, 41, 82, 0.91);
-  z-index: 10;
+.tall-panel {
+  grid-column-end: span 2;
 }
 
-/*section 1 et 2*/
 .panel {
   position: relative;
 }
@@ -216,14 +206,14 @@ h2 span {
 
 .panel:hover>.name {
   font-family: 'Arial', sans-serif;
-padding: 10px;
-background-color: #0d2951;
+  padding: 10px;
+  background-color: #0d2951;
   background-color: rgba(13, 41, 82, 0.74);
-text-align:center;
+  text-align: center;
   font-size: calc(14px + 0.5vw);
   color: white;
   display: block;
-position: absolute;
+  position: absolute;
   z-index: 100;
   animation: fadein 0.5s;
   -moz-animation: fadein 0.5s;
@@ -288,8 +278,21 @@ position: absolute;
   }
 }
 
-/*footer*/
-/*Scroolbar*/
+/*==============FOOTER=============*/
+.footer {
+  grid-column: 1 / 4;
+
+}
+
+.footer h2 {
+background-color: rgba(13, 41, 82, 0.91);
+}
+
+.footer img {
+  max-width: 30%;
+}
+
+/*==============SCROLLBAR=============*/
 /* width */
 ::-webkit-scrollbar {
   width: 8px;
@@ -311,38 +314,7 @@ position: absolute;
   opacity: 0.7;
 }
 
-/* FORM*/
-input[type=text], input[type=email], input[type=tel], select, textarea {
-  width: 100%;
-  padding: 10px;
-  border: 0.2px solid #0d2951;
-  resize: vertical;
-  background-color: white;
-  font-size: calc(10px + 0.5vw);
-}
-
-input[type=submit] {
-  background-color: #bc9f55;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  cursor: pointer;
-  float: right;
-}
-
-input[type=submit]:hover {
-  background-color: #0d2951;
-}
-
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .col-25, .col-75, input[type=submit] {
-    width: 100%;
-    margin-top: 0;
-  }
-}
-
-/* CONTACT*/
+/* ===========CONTACT===========*/
 .overlay {
   height: 100%;
   width: 0;
@@ -390,4 +362,33 @@ input[type=submit]:hover {
   }
 }
 
-/* ZOOM*/
+/* form*/
+input[type=text], input[type=email], input[type=tel], select, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 0.2px solid #0d2951;
+  resize: vertical;
+  background-color: white;
+  font-size: calc(10px + 0.5vw);
+}
+
+input[type=submit] {
+  background-color: #bc9f55;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #0d2951;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
