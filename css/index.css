@@ -17,31 +17,23 @@ p {
   color: black;
 }
 
-a {
-  color: blacksocial;
-}
-
 h2 {
   font-family: 'Arial', sans-serif;
   font-size: calc(18px + 0.5vw);
   color: white;
-  padding: 8px 10px 5px 10px;
-  display: flex;
-  justify-content: flex-end;
-  position: inherit;
+  width: 50%;
+  height: auto;
+  margin: auto;
+  position: absolute;
+  top: 80%;
+  left: 5%;
+  right: 0;
 }
 
-h2 span {
-  font-family: 'Arial', sans-serif;
-  font-size: calc(18px + 0.5vw);
-  color: white;
-  padding: 8px 10px 5px 10px;
-  display: flex;
-  right: 8px;
-  bottom: 5px;
-  position: fixed;
-  background-color: rgba(13, 41, 82, 0.91);
-  z-index: 10;
+@media screen and (max-width: 800px) {
+  h2 span {
+    display: none;
+  }
 }
 
 h3 {
@@ -120,7 +112,7 @@ h4 {
 
 /*=================HEADER===============*/
 header {
-  background-image: url("../img/fonds/fortboyard.jpg");
+  background-image: url("../img/elephant-jungle5.gif");
   background-attachment: fixed;
   background-color: #ffffff;
   background-size: cover;
@@ -144,24 +136,33 @@ header {
 }
 
 .logo img {
-  width: 50%;
+  width: 70%;
   height: auto;
   margin: auto;
- position: absolute;
- top: 0; left: 0; bottom: 0; right: 0;
+  position: absolute;
+  top: 45%;
+  left: 0;
+  right: 0;
 }
 
 .social img {
-  width: 40px;
-  position:absolute;
-  left: 0;
+  width: 30px;
+}
+.social{
+  width: 100%;
+  height: auto;
+  margin: auto;
+  position: absolute;
   top: 5px;
+  left: 0;
+  ;
 }
 
-.social>ul>li {
-  text-decoration: none;
-  display: inline;
-}
+
+
+
+
+
 
 /*===========SECTION WITH FILTER=======*/
 .wrapper {
@@ -281,7 +282,6 @@ header {
 
 /*==============FOOTER=============*/
 .footer {
-
   flex: 2 1 100%;
   grid-column: 1 / 2;
 }
@@ -313,6 +313,19 @@ header {
 }
 
 /* ===========CONTACT===========*/
+.contact h2 span {
+  font-family: 'Arial', sans-serif;
+  font-size: calc(18px + 0.5vw);
+  color: white;
+  padding: 8px 10px 5px 10px;
+  display: flex;
+  right: 8px;
+  bottom: 5px;
+  position: fixed;
+  background-color: rgba(13, 41, 82, 0.91);
+  z-index: 10;
+}
+
 .overlay {
   height: 100%;
   width: 0;
