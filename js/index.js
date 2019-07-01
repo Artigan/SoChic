@@ -58,29 +58,22 @@ for (var i = 0; i < btns.length; i++) {
 }
 
 // SCROLL SMOUTH
-$(document).ready(function(){
-  // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
-
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-
-
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 1500, function(){
-
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
+$(function() {
+    /**
+    * Smooth scrolling to page anchor on click
+    **/
+    $("a[href*='#']:not([href='#'])").click(function() {
+        if (
+            location.hostname == this.hostname
+            && this.pathname.replace(/^\//,"") == location.pathname.replace(/^\//,"")
+        ) {
+            var anchor = $(this.hash);
+            anchor = anchor.length ? anchor : $("[name=" + this.hash.slice(1) +"]");
+            if ( anchor.length ) {
+                $("html, body").animate( { scrollTop: anchor.offset().top }, 1500);
+            }
+        }
+    });
 });
 
 // ZOOM

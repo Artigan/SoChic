@@ -14,26 +14,12 @@ p {
   margin: 0 0 1em 0;
   font-family: 'Arial', sans-serif;
   font-size: calc(12px + 0.5vw);
-  color: black;
+  color: #0d2951;
 }
 
 h2 {
-  font-family: 'Arial', sans-serif;
-  font-size: calc(18px + 0.5vw);
-  color: white;
-  width: 50%;
-  height: auto;
-  margin: auto;
-  position: absolute;
-  top: 80%;
-  left: 5%;
-  right: 0;
-}
-
-@media screen and (max-width: 800px) {
-  h2 span {
-    display: none;
-  }
+color: white;
+padding: 5px;
 }
 
 h3 {
@@ -89,7 +75,8 @@ h4 {
   background-color: #bc9f55;
   cursor: pointer;
   color: white;
-  font-size: 22px;
+  font-size: calc(16px + 0.5vw);
+
 }
 
 /* Add a background color on mouse-over */
@@ -118,7 +105,6 @@ header {
   background-size: cover;
   position: relative;
   background-position: center;
-  background-repeat: no-repeat;
   width: 100%;
   height: 100vh;
 }
@@ -127,7 +113,7 @@ header {
   width: 100%;
   height: 100vh;
   background: #0d2951;
-  opacity: 0.6;
+  opacity: 0;
   position: absolute;
   z-index: 0;
   background-position: center;
@@ -143,6 +129,8 @@ header {
   top: 45%;
   left: 0;
   right: 0;
+  background-color: rgba(13, 41, 82, 0.71);
+  padding: 10px;
 }
 
 .social img {
@@ -155,13 +143,7 @@ header {
   position: absolute;
   top: 5px;
   left: 0;
-  ;
 }
-
-
-
-
-
 
 
 /*===========SECTION WITH FILTER=======*/
@@ -280,14 +262,30 @@ header {
   }
 }
 
-/*==============FOOTER=============*/
-.footer {
-  flex: 2 1 100%;
-  grid-column: 1 / 2;
+/*==============LA MARQUE============*/
+.marque {
+
+}
+.profile img {
+  width: 35%;
 }
 
-.footer h2 span {
-  position: relative;
+.profile {
+	display: flex;
+	flex-wrap: wrap;
+  padding: 40px 10% 3% 10%;
+}
+
+.titre_profile {
+  padding: 5px;
+}
+
+.titre_profile  h2 {
+  background-color: #0d2951;
+}
+
+.contener_profile {
+
 }
 
 /*==============SCROLLBAR=============*/
@@ -314,16 +312,16 @@ header {
 
 /* ===========CONTACT===========*/
 .contact h2 span {
-  font-family: 'Arial', sans-serif;
-  font-size: calc(18px + 0.5vw);
+  font-size: calc(16px + 0.5vw);
   color: white;
   padding: 8px 10px 5px 10px;
   display: flex;
   right: 8px;
   bottom: 5px;
   position: fixed;
-  background-color: rgba(13, 41, 82, 0.91);
+  background-color: rgba(13, 41, 82, 0.81);
   z-index: 10;
+  cursor: pointer;
 }
 
 .overlay {
