@@ -270,13 +270,12 @@ header {
 
 
 .profile img {
-  width: 35%;
+  width: 25%;
 }
 
 .profile {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 40px 10% 3% 10%;
+text-align: center;
+  padding: 40px 5px 5px 5px;
   background-color: #0d2951;
 }
 
