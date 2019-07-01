@@ -13,13 +13,13 @@ body {
 p {
   margin: 0 0 1em 0;
   font-family: 'Arial', sans-serif;
-  font-size: calc(12px + 0.5vw);
+  font-size: calc(14px + 0.5vw);
   color: #0d2951;
 }
 
 h2 {
 color: white;
-padding: 5px;
+
 }
 
 h3 {
@@ -34,13 +34,53 @@ h3 {
 
 h4 {
   font-family: 'Arial', sans-serif;
-  padding: 0 10px 0 0;
+  padding: 10px;
   font-size: calc(12px + 0.5vw);
-  color: #0d2951;
+  color: #bc9f55;
 }
 
-.wrapper>* {
-  color: #fff;
+/*=================HEADER===============*/
+header {
+  background-image: url("../img/elephant-jungle5.gif");
+  background-attachment: fixed;
+  background-color: #ffffff;
+  background-size: cover;
+  position: relative;
+  background-position-x: 36%;
+  background-position-y: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.filter-background {
+  width: 100%;
+  height: 100vh;
+  background: #0d2951;
+  opacity: 0.7;
+  position: absolute;
+}
+
+.logo img {
+  width: 60%;
+  height: auto;
+  margin: auto;
+  position: absolute;
+  top: 45%;
+  left: 0;
+  right: 0;
+  padding: 10px;
+}
+
+.social img {
+  width: 30px;
+}
+.social{
+  width: 100%;
+  height: auto;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 /* =================FILTER============== */
@@ -71,7 +111,7 @@ h4 {
   border: none;
   outline: none;
   padding: 12px 17px 12px 17px;
-  margin-top: 5px;
+  margin: 5px 0 0 0;
   background-color: #bc9f55;
   cursor: pointer;
   color: white;
@@ -97,56 +137,16 @@ h4 {
   color: white;
 }
 
-/*=================HEADER===============*/
-header {
-  background-image: url("../img/elephant-jungle5.gif");
-  background-attachment: fixed;
-  background-color: #ffffff;
-  background-size: cover;
-  position: relative;
-  background-position: center;
-  width: 100%;
-  height: 100vh;
-}
-
-.filter-background {
-  width: 100%;
-  height: 100vh;
-  background: #0d2951;
-  opacity: 0;
-  position: absolute;
-  z-index: 0;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.logo img {
-  width: 70%;
-  height: auto;
-  margin: auto;
-  position: absolute;
-  top: 45%;
-  left: 0;
-  right: 0;
-  background-color: rgba(13, 41, 82, 0.71);
-  padding: 10px;
-}
-
-.social img {
-  width: 30px;
-}
-.social{
-  width: 100%;
-  height: auto;
-  margin: auto;
-  position: absolute;
-  top: 5px;
-  left: 0;
-}
-
-
 /*===========SECTION WITH FILTER=======*/
+.background-title {
+  background-color: #0d2951;
+  border-radius: 0 0 0 5px;
+}
+
+.wrapper>* {
+  color: #fff;
+}
+
 .wrapper {
   margin: 0 30px;
   /* display: grid;*/
@@ -161,7 +161,7 @@ header {
 .wrapper {
   display: grid;
   margin: 0 auto;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
   grid-auto-rows: minmax(150px, auto);
 }
 
@@ -277,11 +277,12 @@ header {
 }
 
 .titre_profile {
-  padding: 5px;
+
 }
 
 .titre_profile  h2 {
   background-color: #0d2951;
+  padding: 5px;
 }
 
 .contener_profile {
@@ -317,7 +318,7 @@ header {
   padding: 8px 10px 5px 10px;
   display: flex;
   right: 8px;
-  bottom: 5px;
+  bottom: 0;
   position: fixed;
   background-color: rgba(13, 41, 82, 0.81);
   z-index: 10;
@@ -401,3 +402,5 @@ input[type=submit]:hover {
     margin-top: 0;
   }
 }
+
+/* ==========ZOOM=================*/
