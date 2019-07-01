@@ -14,11 +14,11 @@ p {
   margin: 0 0 1em 0;
   font-family: 'Arial', sans-serif;
   font-size: calc(14px + 0.5vw);
-  color: #0d2951;
+  color: white;
 }
 
 h2 {
-  color: white;
+  color: #bc9f55;
 }
 
 h3 {
@@ -267,7 +267,7 @@ header {
 }
 
 /*==============LA MARQUE============*/
-.marque {}
+
 
 .profile img {
   width: 35%;
@@ -277,16 +277,8 @@ header {
   display: flex;
   flex-wrap: wrap;
   padding: 40px 10% 3% 10%;
-}
-
-.titre_profile {}
-
-.titre_profile h2 {
   background-color: #0d2951;
-  padding: 5px;
 }
-
-.contener_profile {}
 
 /*==============SCROLLBAR=============*/
 /* width */
