@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/index.css">
   <title>So Chic So Graphic</title>
 </head>
@@ -13,23 +14,23 @@
 
   <!--header-->
   <header class="header">
-<div class="filter-background">
+    <div class="filter-background">
 
-    <div class="social">
-      <div class="facebook">
-        <a href="https://www.facebook.com/sochic.sographic" target="_blank">
-          <img src="img/facebook.jpg" alt="facebook"></a>
+      <div class="social">
+        <div class="facebook">
+          <a href="https://www.facebook.com/sochic.sographic" target="_blank">
+            <img src="img/facebook.jpg" alt="facebook"></a>
+        </div>
+        <div class="instagram">
+          <a href="https://www.instagram.com/so.chic.so.graphic" target="_blank">
+            <img src="img/instagram.jpg" alt="instagram"> </a>
+        </div>
       </div>
-      <div class="instagram">
-        <a href="https://www.instagram.com/so.chic.so.graphic" target="_blank">
-          <img src="img/instagram.jpg" alt="instagram"> </a>
+
+      <div class="logo">
+        <h1> <img src="img/logo.png" alt="So Chic So Graphic, Édition de souvenirs tendances et élégants"> </h1>
       </div>
     </div>
-
-    <div class="logo">
-      <h1> <img src="img/logo.png" alt="So Chic So Graphic, Édition de souvenirs tendances et élégants"> </h1>
-    </div>
-      </div>
 
 
     <div id="contact" class="overlay">
@@ -69,8 +70,8 @@
 
     <h2>
       <div id="myBtnContainer">
-        <a href="#myBtnContainer"><button class="btn active" onclick="filterSelection('collections-exclu')"> Collection exclusive</button></a>
-        <a href="#myBtnContainer"><button class="btn" onclick="filterSelection('sur-mesure')"> Collection sur-mesure</button></a>
+        <a href="#myBtnContainer"><button class="btn active" onclick="filterSelection('collections-exclu')"> Création exclusive</button></a>
+        <a href="#myBtnContainer"><button class="btn" onclick="filterSelection('sur-mesure')"> Création sur-mesure</button></a>
         <a href="#myBtnContainer"><button class="btn" onclick="filterSelection('produits')"> Produits So Chic</button></a>
       </div>
     </h2>
@@ -81,12 +82,18 @@
     <!--=============================PRODUITS SO CHIC===================================-->
     <div class="column produits">
       <div class="panel">
-        <div class="background-title">
-        <h4>Découvrez notre gamme de produits,</h4>
-        <h4>des nouveautés tout au long de l'année</h4>
-        <img src="img/icone/fabriquation-francaise.png" alt="Fabrication Française" style="max-width: 13%;height: auto;">
-        <h4>Fabrication Française</h4>
+        <div class="name">
+          <div class="title_card">
+            <div class="background-title">
+              <h4>Découvrez notre gamme de produits,</h4>
+              <h4>des nouveautés tout au long de l'année</h4>
+              <div class="fabrication_fr">
+                <img src="img/icone/sochicsographic-coq-fabrication-francaise.svg" alt="Fabrication Française">
+              </div>
+            </div>
+          </div>
         </div>
+        <img src="img/elephant-jungle5.gif" alt="Affiche chateau de Vayres">
       </div>
     </div>
     <div class="column produits">
@@ -173,14 +180,20 @@
         <img src="img/porte-clef.jpg" alt="Portes-clés">
       </div>
     </div>
-    <!--=============================COLLECTION EXCLUSIVE===================================-->
+    <!--=============================CREATION EXCLUSIVE===================================-->
     <div class="column collections-exclu">
       <div class="panel">
-        <div class="background-title">
-        <h4>Boutiques, musées, événements, cadeaux d'entreprises</h4>
-        <img src="img/icone/fabriquation-francaise.png" alt="Fabrication Française" style="max-width: 13%;height: auto;">
-        <h4>Fabrication Française</h4>
-      </div>
+        <div class="name">
+          <div class="title_card">
+            <div class="background-title">
+              <h4>Boutiques, musées, événements, cadeaux d'entreprises</h4>
+              <div class="fabrication_fr">
+                <img src="img/icone/sochicsographic-coq-fabrication-francaise.svg" alt="Fabrication Française">
+              </div>
+            </div>
+          </div>
+        </div>
+        <img src="img/elephant-jungle5.gif" alt="Affiche chateau de Vayres">
       </div>
     </div>
     <div class="column collections-exclu">
@@ -225,14 +238,22 @@
         <img src="img/partenaires/vaux-le-vicomte.jpg" alt="Vaux-le-Vicomte">
       </div>
     </div>
-    <!--=============================COLLECTION SUR-MESURE===================================-->
+    <!--=============================CREATION SUR-MESURE===================================-->
     <div class="column sur-mesure">
       <div class="panel">
-        <div class="background-title">
-        <h4>Une gamme d'objets à personnaliser</h4>
-        <h4>Une offre sur mesure: illustration, objet, présentoir</h4>
-        <h4>Une demande précise: Un devis est établi</h4>
-      </div>
+        <div class="name">
+          <div class="title_card">
+            <div class="background-title">
+              <h4>Une gamme d'objets à personnaliser</h4>
+              <h4>Une offre sur mesure: illustration, objet, présentoir</h4>
+              <h4>Une demande précise: Un devis est établi</h4>
+              <div class="fabrication_fr">
+                <img src="img/icone/sochicsographic-coq-fabrication-francaise.svg" alt="Fabrication Française">
+              </div>
+            </div>
+          </div>
+        </div>
+        <img src="img/elephant-jungle5.gif" alt="Affiche chateau de Vayres">
       </div>
     </div>
     <div class="column sur-mesure">
@@ -426,12 +447,13 @@
       <img src="img/anne-louise.jpg" alt="Anne-Louise">
     </div>
     <div class="titre_profile">
-      <h2>Anne-Louise, Fondatrice de la marque / Graphiste-illustratrice</h2>
+      <h2>Anne-Louise, <br> Fondatrice de la marque / Graphiste-illustratrice</h2>
     </div>
     <div class="contener_profile">
       <p>Après avoir étudié le graphisme à Paris et commencé sa carrière en tant que directrice artistique, Anne Louise a découvert une passion pour les motifs.
         Souhaitant mettre du pep’s dans les objets du quotidien et les objets souvenirs, elle décide de créer une gamme de papeterie et accessoires de qualité aux motifs graphiques, tendances et vitaminés et fonde la marque So Chic So Graphic à
         Paris.
+        <br>
         Ayant un goût pour le challenge et passionnée par la création, Anne-Louise prend plaisir à travailler sur les demandes d’illustrations sur-mesure de tous horizons.
       </p>
     </div>
@@ -442,11 +464,12 @@
       <img src="img/marie.jpg" alt="Marie">
     </div>
     <div class="titre_profile">
-      <h2>Marie, Marketing / Commercial</h2>
+      <h2>Marie,<br> Marketing / Commercial</h2>
     </div>
     <div class="contener_profile">
       <p>Après des études en école de commerce, Marie a travaillé plusieurs années pour des grands comptes dans le domaine de l’impression et l’édition de produits personnalisables.
         Elle se lance dans l’aventure So Chic So Graphic et y apporte son expertise en marketing et développement commercial.
+        <br>
         Organisée, rigoureuse et créative, Marie est soucieuse de répondre aux demandes de personnalisation en trouvant les meilleures offres et produits de haute qualité les plus adaptés.
       </p>
     </div>

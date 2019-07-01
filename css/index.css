@@ -18,8 +18,7 @@ p {
 }
 
 h2 {
-color: white;
-
+  color: white;
 }
 
 h3 {
@@ -37,6 +36,7 @@ h4 {
   padding: 10px;
   font-size: calc(12px + 0.5vw);
   color: #bc9f55;
+  text-align: center;
 }
 
 /*=================HEADER===============*/
@@ -74,7 +74,8 @@ header {
 .social img {
   width: 30px;
 }
-.social{
+
+.social {
   width: 100%;
   height: auto;
   margin: auto;
@@ -116,7 +117,6 @@ header {
   cursor: pointer;
   color: white;
   font-size: calc(16px + 0.5vw);
-
 }
 
 /* Add a background color on mouse-over */
@@ -138,9 +138,13 @@ header {
 }
 
 /*===========SECTION WITH FILTER=======*/
-.background-title {
+.fabrication_fr img {
+  width: 80%;
+}
+
+.column .title_card {
   background-color: #0d2951;
-  border-radius: 0 0 0 5px;
+  background-color: rgba(255, 255, 255, 0.81);
 }
 
 .wrapper>* {
@@ -186,6 +190,7 @@ header {
   display: none;
   padding: 10px;
   position: absolute;
+  text-align: center;
 }
 
 .panel:hover>.name {
@@ -193,7 +198,6 @@ header {
   padding: 10px;
   background-color: #0d2951;
   background-color: rgba(13, 41, 82, 0.74);
-  text-align: center;
   font-size: calc(14px + 0.5vw);
   color: white;
   display: block;
@@ -263,31 +267,26 @@ header {
 }
 
 /*==============LA MARQUE============*/
-.marque {
+.marque {}
 
-}
 .profile img {
   width: 35%;
 }
 
 .profile {
-	display: flex;
-	flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
   padding: 40px 10% 3% 10%;
 }
 
-.titre_profile {
+.titre_profile {}
 
-}
-
-.titre_profile  h2 {
+.titre_profile h2 {
   background-color: #0d2951;
   padding: 5px;
 }
 
-.contener_profile {
-
-}
+.contener_profile {}
 
 /*==============SCROLLBAR=============*/
 /* width */
