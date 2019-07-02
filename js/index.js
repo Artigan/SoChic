@@ -13,7 +13,7 @@ filterSelection("all") // Execute the function and show all columns
 function filterSelection(c) {
   var x, i;
   x = document.getElementsByClassName("column");
-  if (c == "all") c = "collections-exclu";
+  if (c == "all") c = "sur-mesure";
   // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
   for (i = 0; i < x.length; i++) {
     w3RemoveClass(x[i], "show");
@@ -86,11 +86,8 @@ window.onscroll = function() {
 };
 
 function contactBtn() {
-  if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 50) {
-    document.getElementById("contactBtn").className = "contactOn";}
-    else if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 50) {
-      document.getElementById("contactBtn").className = "contactOn2";}
-     else {
-      document.getElementById("contactBtn").className = "contactBtn h2 span";
-    }
+  if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 45)
+    document.getElementById("contactBtnJs").className = "contactOn";
+  else
+    document.getElementById("contactBtnJs").className = "contactBtn h2 span";
   }
