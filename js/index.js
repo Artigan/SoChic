@@ -50,7 +50,7 @@ function w3RemoveClass(element, name) {
 var btnContainer = document.getElementById("myBtnContainer");
 var btns = btnContainer.getElementsByClassName("btn");
 for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function(){
+  btns[i].addEventListener("click", function() {
     var current = document.getElementsByClassName("active");
     current[0].className = current[0].className.replace(" active", "");
     this.className += " active";
@@ -59,21 +59,38 @@ for (var i = 0; i < btns.length; i++) {
 
 // SCROLL SMOUTH
 $(function() {
-    /**
-    * Smooth scrolling to page anchor on click
-    **/
-    $("a[href*='#']:not([href='#'])").click(function() {
-        if (
-            location.hostname == this.hostname
-            && this.pathname.replace(/^\//,"") == location.pathname.replace(/^\//,"")
-        ) {
-            var anchor = $(this.hash);
-            anchor = anchor.length ? anchor : $("[name=" + this.hash.slice(1) +"]");
-            if ( anchor.length ) {
-                $("html, body").animate( { scrollTop: anchor.offset().top }, 1200);
-            }
-        }
-    });
+  /**
+   * Smooth scrolling to page anchor on click
+   **/
+  $("a[href*='#']:not([href='#'])").click(function() {
+    if (
+      location.hostname == this.hostname &&
+      this.pathname.replace(/^\//, "") == location.pathname.replace(/^\//, "")
+    ) {
+      var anchor = $(this.hash);
+      anchor = anchor.length ? anchor : $("[name=" + this.hash.slice(1) + "]");
+      if (anchor.length) {
+        $("html, body").animate({
+          scrollTop: anchor.offset().top
+        }, 1200);
+      }
+    }
+  });
 });
 
 // ZOOM
+
+// CONTACT_BTN VISIBILITY
+window.onscroll = function() {
+  contactBtn()
+};
+
+function contactBtn() {
+  if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 50) {
+    document.getElementById("contactBtn").className = "contactOn";}
+    else if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 50) {
+      document.getElementById("contactBtn").className = "contactOn2";}
+     else {
+      document.getElementById("contactBtn").className = "contactBtn h2 span";
+    }
+  }
