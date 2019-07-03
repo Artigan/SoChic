@@ -269,6 +269,10 @@ header {
   width: 25%;
 }
 
+.profile h2 span {
+    font-size: calc(14px + 0.5vw);
+}
+
 /*==============SCROLLBAR=============*/
 /* width */
 ::-webkit-scrollbar {
@@ -295,7 +299,7 @@ header {
 /* ==================CONTACT=================*/
 .contactBtn span {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: calc(14px + 0.5vw);
+  font-size: calc(14px + 0.7vw);
   padding: 8px 10px 5px 10px;
   display: flex;
   right: 8px;
@@ -373,6 +377,10 @@ header {
   transform: rotate(360deg);
 }
 
+.overlay a:hover {
+  color: #bc9f55;
+}
+
 @media screen and (min-width: 350px) {
   .overlay {
     max-width: 450px;
@@ -382,10 +390,16 @@ header {
 /* form*/
 input[type=text], input[type=email], input[type=tel], select, textarea {
   width: 100%;
-  padding: 10px;
+  padding: 8px;
   resize: vertical;
   background-color: white;
   font-size: calc(10px + 0.5vw);
+  border-style: none;
+  border-left: 5px solid #bc9f55;
+}
+
+input[type=text]:focus, input[type=email]:focus, input[type=tel]:focus, select:focus, textarea:focus {
+border: 1px solid #bc9f55;
 }
 
 input[type=submit] {
@@ -410,5 +424,3 @@ input[type=submit]:hover {
     margin-top: 0;
   }
 }
-
-/* ==========ZOOM=================*/

@@ -78,8 +78,6 @@ $(function() {
   });
 });
 
-// ZOOM
-
 // CONTACT_BTN VISIBILITY
 window.onscroll = function() {
   contactBtn()
