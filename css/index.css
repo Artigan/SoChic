@@ -7,12 +7,11 @@
 }
 
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 p {
   margin: 0 0 1em 0;
-  font-family: 'Arial', sans-serif;
   font-size: calc(14px + 0.5vw);
   color: white;
 }
@@ -22,7 +21,6 @@ h2 {
 }
 
 h3 {
-  font-family: 'Arial', sans-serif;
   padding: 10px;
   font-size: calc(12px + 0.5vw);
   color: white;
@@ -32,7 +30,6 @@ h3 {
 }
 
 h4 {
-  font-family: 'Arial', sans-serif;
   padding: 10px;
   font-size: calc(12px + 0.5vw);
   color: #bc9f55;
@@ -83,7 +80,7 @@ header {
   top: 0;
   left: 0;
   z-index: 200;
-  opacity: 0.5;
+  opacity: 0.6;
 }
 
 .social:hover {
@@ -173,13 +170,6 @@ header {
 .panel {
   /* needed for the flex layout*/
   flex: 1 1 200px;
-}
-
-.tall-panel {
-  grid-column-end: span 2;
-}
-
-.panel {
   position: relative;
 }
 
@@ -195,7 +185,7 @@ header {
 }
 
 .panel:hover>.name {
-  font-family: 'Arial', sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   padding: 10px;
   background-color: #0d2951;
   background-color: rgba(13, 41, 82, 0.74);
@@ -300,27 +290,30 @@ header {
 }
 
 /* ==================CONTACT=================*/
-.contactBtn h2 span {
+.contactBtn span {
+  font-family: Arial, Helvetica, sans-serif;
   font-size: calc(14px + 0.5vw);
   padding: 8px 10px 5px 10px;
   display: flex;
-  right: 18px;
   right: 8px;
   position: fixed;
   z-index: 200;
   cursor: pointer;
-  transition: 0.5s linear all;
+  transition: 0.2s linear all;
+  background-color: #bc9f55;
+  color: white;
 }
 
-.contactBtn:hover h2 span {
-  color: white;
+.contactBtn:hover span {
+  background-color: #0d2951;
+
 }
 
 .contactOn {
-  background-color: #bc9f55;
-  transition: 0.5s linear all;
+
+  transition: 0.2s linear all;
   bottom: 8px;
-  color: white;
+
 }
 
 .contactOn:hover {
