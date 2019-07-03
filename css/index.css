@@ -54,13 +54,17 @@ header {
   height: 100vh;
   background: white;
   position: absolute;
-  opacity:0.2;
-	transition:opacity 4s ease-in-out;
-	-moz-transition:opacity 4s ease-in-out;
-	-o-transition:opacity 4s ease-in-out;
-	-ms-transition:opacity 4s ease-in-out;
-	-webkit-transition:opacity 4s ease-in-out;
+  opacity:0.7;
+	transition:opacity 1.5s ease-in-out;
+	-moz-transition:opacity 1.5s ease-in-out;
+	-o-transition:opacity 1.5s ease-in-out;
+	-ms-transition:opacity 1.5s ease-in-out;
+	-webkit-transition:opacity 1.5s ease-in-out;
 }
+
+.filter-background:hover {
+      opacity: 0.2;
+      }
 
 .logo img {
   width: 60%;
