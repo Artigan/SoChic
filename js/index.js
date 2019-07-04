@@ -88,4 +88,4 @@ function contactBtn() {
     document.getElementById("contactBtnJs").className = "contactOn";
   else
     document.getElementById("contactBtnJs").className = "contactBtn h2 span";
-  }
+}
