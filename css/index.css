@@ -49,6 +49,12 @@ header {
   height: 100vh;
 }
 
+@media screen and (max-width: 1050px) {
+  .header  {
+  height: 550px;
+  }
+}
+
 .filter-background {
   width: 100%;
   height: 100%;
