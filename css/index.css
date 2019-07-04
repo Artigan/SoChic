@@ -434,8 +434,8 @@ input[type=submit] {
   cursor: pointer;
   float: right;
   font-size: calc(12px + 0.5vw);
-  border-radius: none;
   -webkit-appearance: none;
+  -webkit-border-radius: 0;
   -moz-appearance: none;
   appearance: none;
 }
