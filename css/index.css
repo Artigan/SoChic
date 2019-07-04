@@ -406,7 +406,7 @@ header {
 }
 
 /* form*/
-input[type=text], input[type=email], input[type=tel], input[type=submit], select, option, textarea {
+input[type=text], input[type=email], input[type=tel], select, option, textarea {
   width: 100%;
   padding: 8px;
   resize: vertical;
@@ -415,9 +415,6 @@ input[type=text], input[type=email], input[type=tel], input[type=submit], select
   border-style: none;
   border-left: 5px solid #bc9f55;
   color: #0d2951;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
 }
 
 input[type=text]:focus, input[type=email]:focus, input[type=tel]:focus, option:focus, textarea:focus {
@@ -437,6 +434,10 @@ input[type=submit] {
   cursor: pointer;
   float: right;
   font-size: calc(12px + 0.5vw);
+  border-radius: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 input[type=submit]:hover {
