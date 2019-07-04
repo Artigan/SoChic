@@ -41,7 +41,7 @@ header {
   background-image: url("../img/bandeaux/cartes-postales.jpg");
   background-attachment: fixed;
   background-color: white;
-  background-size: cover;
+  background-size: auto:
   position: relative;
   background-position-x: 50%;
   background-position-y: center;
