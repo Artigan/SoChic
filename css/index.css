@@ -87,7 +87,6 @@ header {
   top: 10%;
   left: 0;
   right: 0;
-  padding: 10px;
 }
 
 .social img {
@@ -148,6 +147,7 @@ header {
 }
 
 .btn:hover {
+  background-color: #0d2951;
   background-color: rgba(13, 41, 82, 0.8);
   transition: 0.2s linear all;
 }
@@ -314,6 +314,7 @@ header {
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
+  background: #0d2951;
   background: rgba(13, 41, 82, 0.8);
 }
 
