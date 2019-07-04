@@ -435,7 +435,7 @@ input[type=submit] {
   float: right;
   font-size: calc(12px + 0.5vw);
   -webkit-appearance: none;
-  -webkit-border-radius: 0;
+  -webkit-border-radius:0px;
   -moz-appearance: none;
   appearance: none;
 }
