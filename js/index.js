@@ -91,7 +91,8 @@ function contactBtn() {
   }
 
   // Remove min-height on iOS after slideshow initialization
-  var iOS = navigator.userAgent.match(/(iPad|iPhone|iPod)/g) ? true;
-  if(iOS && $('.slideshow').css('min-height') == '100vh'){
-    $('.slideshow').css('min-height', '0');
+  window.addEventListener("orientationchange", function() {
+  if (navigator.userAgent.match(/(iPhone|iPod|iPad)/i)) {
+    document.documentElement.innerHTML = document.documentElement.innerHTML;
   }
+}, false);
