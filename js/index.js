@@ -89,3 +89,9 @@ function contactBtn() {
   else
     document.getElementById("contactBtnJs").className = "contactBtn h2 span";
   }
+
+  // Remove min-height on iOS after slideshow initialization
+  var iOS = navigator.userAgent.match(/(iPad|iPhone|iPod)/g) ? true;
+  if(iOS && $('.slideshow').css('min-height') == '100vh'){
+    $('.slideshow').css('min-height', '0');
+  }
