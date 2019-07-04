@@ -89,10 +89,3 @@ function contactBtn() {
   else
     document.getElementById("contactBtnJs").className = "contactBtn h2 span";
   }
-
-  // Remove min-height on iOS after slideshow initialization
-  window.addEventListener("orientationchange", function() {
-  if (navigator.userAgent.match(/(iPhone|iPod|iPad)/i)) {
-    document.documentElement.innerHTML = document.documentElement.innerHTML;
-  }
-}, false);
