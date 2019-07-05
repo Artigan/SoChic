@@ -84,8 +84,8 @@ window.onscroll = function() {
 };
 
 function contactBtn() {
-  if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 45)
+  if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 85)
     document.getElementById("contactBtnJs").className = "contactOn";
   else
-    document.getElementById("contactBtnJs").className = "contactBtn h2 span";
+    document.getElementById("contactBtnJs").className = "contactBtn span";
 }

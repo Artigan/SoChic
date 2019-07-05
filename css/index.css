@@ -203,14 +203,13 @@ header {
   padding: 10px;
   position: absolute;
   text-align: center;
+  padding: 10px;
+  font-size: calc(14px + 0.5vw);
+  background-color: #0d2951;
+  background-color: rgba(13, 41, 82, 0.8);
 }
 
 .panel:hover>.name {
-  font-family: Arial, Helvetica, sans-serif;
-  padding: 10px;
-  background-color: #0d2951;
-  background-color: rgba(13, 41, 82, 0.8);
-  font-size: calc(14px + 0.5vw);
   color: white;
   display: block;
   position: absolute;
@@ -227,8 +226,6 @@ header {
 @media screen and (max-width: 1050px) {
   .name {
     display: block;
-    background-color: #0d2951;
-    background-color: rgba(13, 41, 82, 0.8);
   }
 }
 
@@ -415,7 +412,7 @@ input[type=text], input[type=email], input[type=tel], select, option, textarea {
   border-style: none;
   border-left: 5px solid #bc9f55;
   color: #0d2951;
-  -webkit-border-radius:0px;
+  -webkit-border-radius: 0px;
 }
 
 input[type=text]:focus, input[type=email]:focus, input[type=tel]:focus, option:focus, textarea:focus {
@@ -436,7 +433,7 @@ input[type=submit] {
   float: right;
   font-size: calc(12px + 0.5vw);
   -webkit-appearance: none;
-  -webkit-border-radius:0px;
+  -webkit-border-radius: 0px;
   -moz-appearance: none;
   appearance: none;
 }
@@ -448,7 +445,7 @@ input[type=submit]:hover {
 }
 
 @media screen and (max-width: 600px) {
-  .col-25, .col-75, input[type=submit] {
+  input[type=submit] {
     width: 100%;
     margin-top: 0;
   }
