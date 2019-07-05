@@ -72,11 +72,13 @@ $(function() {
       if (anchor.length) {
         $("html, body").animate({
           scrollTop: anchor.offset().top
-        }, 1200);
+        }, 1400);
       }
     }
   });
 });
+
+
 
 // CONTACT_BTN VISIBILITY
 window.onscroll = function() {
