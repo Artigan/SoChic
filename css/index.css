@@ -4,7 +4,6 @@
 *:after {
   box-sizing: border-box;
   overflow-x: hidden;
-  -webkit-overflow-scrolling: touch;
 }
 
 body {
@@ -119,12 +118,12 @@ header {
 /* The "show" class is added when elements is filter */
 .show {
   display: block;
-  animation: fadein 1.5s;
-  -moz-animation: fadein 1.5s;
+  animation: fadein 3s;
+  -moz-animation: fadein 3s;
   /* Firefox */
-  -webkit-animation: fadein 1.5s;
+  -webkit-animation: fadein 3s;
   /* Safari and Chrome */
-  -o-animation: fadein 1.5s;
+  -o-animation: fadein 3s;
   /* Opera */
 }
 
@@ -216,12 +215,12 @@ header {
   display: block;
   position: absolute;
   z-index: 100;
-  animation: fadein 0.5s;
-  -moz-animation: fadein 0.5s;
+  animation: fadein 1.5s;
+  -moz-animation: fadein 1.5s;
   /* Firefox */
-  -webkit-animation: fadein 0.5s;
+  -webkit-animation: fadein 1.5s;
   /* Safari and Chrome */
-  -o-animation: fadein 0.5s;
+  -o-animation: fadein 1.5s;
   /* Opera */
 }
 
